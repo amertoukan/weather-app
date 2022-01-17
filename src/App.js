@@ -48,11 +48,11 @@ date()
     return <span className = "inner-container">
     
       <p className='bold'>{date(day.dt)}</p>
-      <p>{day.dt}</p>
+
       <img className = "" src = {(`http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`)} />
       <div className="flexbox">
-       <p className= "inline left bold">{day.temp.max}</p>
-       <p className = "inline right" >{day.temp.min}</p>
+       <p className= "inline left bold">{Math.round(day.temp.max)}°</p>
+       <p className = "inline right" >{Math.round(day.temp.min)}°</p>
        </div>
     </span>
     })}

@@ -9,8 +9,8 @@
  }
 .container{
 border-style: solid;
-width: 75%;
-margin: auto;
+
+margin: auto 0px;
 top:50%;
 left: 50%;
 transform: translate(-50%, -50%);
@@ -18,12 +18,18 @@ position: absolute;
 }
 
 .inner-container{
-width: 10%;
+
 position: relative; 
 display: inline-block; 
 margin: 0.5em 40px; 
 padding: 0.1em; 
 
+}
+
+.inner-container:first-child{
+  background-color: rgb(230, 229, 229);
+  margin: 2px;
+  height: 100%;
 }
 .flexbox{
   display: flex;
