@@ -24,12 +24,15 @@ this.state.weather.splice(5)
 const date = (e) => { 
   console.log("here")
   let a = Date.now()
+  let dateObj = new Date(e)
+  console.log(dateObj)
   const format = {
     weekday: 'short',
+   
   }
-console.log(e)
 
-  return(new Date (e).toLocaleString('en-US', format))
+  console.log(e)
+  return(new Date (e*1000).toLocaleString('en-gb', format))
 }
 date()
   return (
@@ -43,8 +46,9 @@ date()
     {this.state.weather.map((day, index) => {
 
     return <span className = "inner-container">
-
+    
       <p className='bold'>{date(day.dt)}</p>
+      <p>{day.dt}</p>
       <img className = "" src = {(`http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`)} />
       <div className="flexbox">
        <p className= "inline left bold">{day.temp.max}</p>
