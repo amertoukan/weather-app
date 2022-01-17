@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  
+}
+ img{
+  
+   text-align: center;
+  
+ }
+.container{
+border-style: solid;
+width: 75%;
+margin: auto;
+top:50%;
+left: 50%;
+transform: translate(-50%, -50%);
+position: absolute;
+}
+
+.inner-container{
+width: 10%;
+position: relative; 
+display: inline-block; 
+margin: 0.5em 40px; 
+padding: 0.1em; 
+
+}
+.flexbox{
+  display: flex;
+  text-align: center;
+  color: #000000;
+}
+.inline{ 
+  display: flex;
+  text-align: justify;
+  display: inline; 
+  align-items: baseline;
+  justify-content: space-between;
+  margin: auto;
+}
+.bold{
+
+  font-weight: bolder
+}
+.right{
+
+}
